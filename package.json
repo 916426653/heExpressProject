@@ -1,0 +1,16 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "connect": ">= 1.x",
+    "connect-mongo": ">= 0.1.7",
+    "ejs": "*",
+    "express": "3.0.0",
+    "mongodb": ">= 0.9.9",
+    "mongoose": "^4.5.0"
+  }
+}

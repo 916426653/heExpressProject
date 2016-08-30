@@ -1,0 +1,20 @@
+<form class="form-horizontal" action="/doUpdate"  method="post">
+<fieldset>
+    <legend>修改页面</legend>
+    <div class="control-group">
+        <label class="control-label" for="updateBlog">博客内容：</label>
+        <input type="hidden"  name="postId"  id="postId" value="<%=post._id%>"></input>
+        <input type="hidden"  name="user"  id="user" value="<%=post.user%>"></input>
+        <input type="hidden"  name="time"  id="time" value="<%=post.time%>"></input>
+        <div class="controls">
+        	<textarea  id="updateBlog" style="height: 400px;width: 500px;"  name="updateBlog" >
+        	<%=post.post%>	
+        	</textarea>
+        </div>
+    </div>
+  
+     <div class="form-actions">
+        <button type="submit" class="btn btn-primary">修改</button> <button onclick="history.go(-1)" class="btn btn-primary">返回</button>
+     </div>
+</fieldset>
+</form>
